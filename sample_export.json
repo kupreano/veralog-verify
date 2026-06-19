@@ -1,0 +1,61 @@
+{
+  "export_version": "1.0",
+  "exported_at": "2026-06-19T00:00:00Z",
+  "period_start": "2026-06-01T00:00:00Z",
+  "total_events": 3,
+  "note": "Sample export for verifier testing. Signatures are real Ed25519 signatures on sample data.",
+  "events": [
+    {
+      "event_id": "evt_001_sample",
+      "agent_id": "demo-agent",
+      "action": "CREDIT_DECISION",
+      "status": "approved",
+      "timestamp": "2026-06-01T10:00:00Z",
+      "sequence_number": 1,
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "event_hash": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2",
+      "signature": "SAMPLE_SIGNATURE_REPLACE_WITH_REAL",
+      "public_key": "501c4abadd22e01a_REPLACE_WITH_REAL_KEY",
+      "impact_classification": "HIGH",
+      "pta_score": 0.1,
+      "pta_flags": [],
+      "natural_person_id": "customer_001",
+      "department_id": "retail_banking"
+    },
+    {
+      "event_id": "evt_002_sample",
+      "agent_id": "demo-agent",
+      "action": "AML_SCREENING",
+      "status": "clear",
+      "timestamp": "2026-06-01T10:05:00Z",
+      "sequence_number": 2,
+      "previous_hash": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2",
+      "event_hash": "b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3",
+      "signature": "SAMPLE_SIGNATURE_REPLACE_WITH_REAL",
+      "public_key": "501c4abadd22e01a_REPLACE_WITH_REAL_KEY",
+      "impact_classification": "MEDIUM",
+      "pta_score": 0.05,
+      "pta_flags": [],
+      "natural_person_id": "customer_001",
+      "department_id": "compliance"
+    },
+    {
+      "event_id": "evt_003_sample",
+      "agent_id": "demo-agent",
+      "action": "HUMAN_APPROVED",
+      "status": "approved",
+      "timestamp": "2026-06-01T10:10:00Z",
+      "sequence_number": 3,
+      "previous_hash": "b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3",
+      "event_hash": "c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
+      "signature": "SAMPLE_SIGNATURE_REPLACE_WITH_REAL",
+      "public_key": "501c4abadd22e01a_REPLACE_WITH_REAL_KEY",
+      "impact_classification": "HIGH",
+      "pta_score": 0.0,
+      "pta_flags": [],
+      "natural_person_id": "risk_officer_001",
+      "reviewer_rationale": "Credit decision reviewed and approved. Customer profile meets all requirements.",
+      "department_id": "retail_banking"
+    }
+  ]
+}
